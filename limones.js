@@ -119,7 +119,20 @@ function aparecerLimon(){
     limonX=generarAleatorio(0,canvas.width-ANCHO_LIMON);
     limonY=0;
     actualizarPantalla();
-
-
 }
+
+
+    function reiniciar(){
+        clearInterval(intervalo);
+
+        puntaje=0;
+        vidas=3;
+        velocidadCaida=200
+
+        mostrarEnSpan("txtPuntaje", puntaje);
+        mostrarEnSpan("txtVidas", vidas);
+        iniciar();
+  }
+
+
 
