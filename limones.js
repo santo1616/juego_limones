@@ -34,13 +34,11 @@ function dibujarPersonaje(){
 function moverIzquierda(){
     personajeX=personajeX-10;
     actualizarPantalla();
-    detectarColision();
     
 }
 function moverDerecha(){
     personajeX=personajeX+10;
     actualizarPantalla();
-    detectarColision();
     
     
 }
@@ -66,6 +64,8 @@ function dibujarLimon(){
 function bajarLimon(){
     limonY = limonY + 10;
     actualizarPantalla();
+    detectarColision();
+    
 }
 
 function detectarColision(){
@@ -76,7 +76,12 @@ function detectarColision(){
                 alert("Atrapado!!!");
 
         }
+}
 
+function probarAleatorio(){
+    let aleatorio=generarAleatorio(10,80);
+    console.log(aleatorio);
 
-    }
+}
+
 
