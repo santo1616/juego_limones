@@ -260,3 +260,24 @@ canvas {
     max-width: 280px;
   }
 }
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 180px;
+  max-width: 80%;
+  height: auto;
+
+  /* EFECTO PRO */
+  filter: drop-shadow(0 0 15px rgba(56, 189, 248, 0.6))
+          drop-shadow(0 0 30px rgba(56, 189, 248, 0.3));
+
+  transition: transform 0.3s ease;
+}
+
+/* ANIMACIÓN SUTIL */
+.logo img:hover {
+  transform: scale(1.05);
+}
