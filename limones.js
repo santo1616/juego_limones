@@ -83,6 +83,17 @@ function detectarAtrapado(){
         aparecerLimon();
         puntaje=puntaje+1;
         mostrarEnSpan("txtPuntaje",puntaje)
+
+        if(puntaje==3){
+            velocidadCaida=150;
+        }
+        if(puntaje==6){
+            velocidadCaida=100;
+        }
+
+         if(puntaje==10){
+            alert("GANASTE TUS LIMONES PARA LA LIMONADA");
+        }
         }
 }
 
